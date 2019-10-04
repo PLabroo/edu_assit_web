@@ -1,0 +1,54 @@
+.navbar{
+    border-bottom: 4px solid rgb(178, 182, 185);
+    /* -moz-border-image: -moz-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
+    -webkit-border-image: -webkit-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
+    /* border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
+    border-image-slice: 1; */ 
+}
+.navbar .nav-item.active {
+    border: 2px solid rgb(178, 182, 185);
+    /* border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
+    border-image-slice: 1; */
+    border-radius: 15%;
+}
+
+.jumbotron {
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIK5fWLNsIIU3uNI1KDKfPSAINbgDGsHItlKQxPqu2NBVhJcSN);
+    /* background-color: #cccccc; */
+  height: 500px;
+  background-position: center;
+    background-repeat: no-repeat; 
+  background-size: cover;
+  position: relative;
+  /* image-rendering: pixelated; */
+}
+/* https://www.insidehighered.com/sites/default/server_files/media/swift_in_use_students_0.jpg */
+
+.text{
+    text-align: center;
+}
+img{
+  height:60px;
+  border-radius: 50%;
+}
+h1{
+  height:60px;
+}
+p{
+  font-family: cursive;
+  font-size:25px;
+}
+#features{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:40px;
+  color: #003366;
+  text-align: center;
+  margin-left:250px;
+}
+#featuretxt{
+  text-align: center;
+  margin-left: 230px;
+}
+
+/* https://cdn.pixabay.com/photo/2019/07/09/07/01/background-4326353_960_720.jpg */
+/* https://www.desktopbackground.org/p/2010/06/08/29705_colored-smoke-bombs-wallpaper_920x920_h.jpg */

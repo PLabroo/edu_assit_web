@@ -1,5 +1,9 @@
 .navbar{
     border-bottom: 4px solid rgb(178, 182, 185);
+    box-shadow: 0 15px 25px #888888;
+    background-color:#000000;
+    background:linear-gradient(147deg, #000000 0%, #202020 74%);
+    /* border-radius: 8%; */
     /* -moz-border-image: -moz-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
     -webkit-border-image: -webkit-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
     /* border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
@@ -12,21 +16,48 @@
     border-radius: 15%;
 }
 
-.jumbotron {
-    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIK5fWLNsIIU3uNI1KDKfPSAINbgDGsHItlKQxPqu2NBVhJcSN);
+.jumbotron{
+  background-image: url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
     /* background-color: #cccccc; */
-  height: 500px;
-  background-position: center;
+  background-position: center center;
     background-repeat: no-repeat; 
   background-size: cover;
-  position: relative;
+  height:100vh;
+  box-shadow: 0 5px 10px #888888;
+  /* position: relative; */
   /* image-rendering: pixelated; */
 }
 /* https://www.insidehighered.com/sites/default/server_files/media/swift_in_use_students_0.jpg */
 
+#educare{
+  border:3px solid linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  background-color: grey;
+  opacity:0.68;
+  width:560px;
+  /* text-align: center; */
+  margin-left: 350px;
+  border-radius:15px;
+  background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+
+}
+
+#logo{
+  padding-top:7px;
+  border:3px solid linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  background-color: grey;
+  opacity:0.68;
+  width:300px;
+  height:70px;
+  /* text-align: center; */
+  margin-left: 450px;
+  border-radius:15px;
+  background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+
+}
 .text{
     text-align: center;
 }
+
 img{
   height:60px;
   border-radius: 50%;
@@ -50,5 +81,78 @@ p{
   margin-left: 230px;
 }
 
-/* https://cdn.pixabay.com/photo/2019/07/09/07/01/background-4326353_960_720.jpg */
-/* https://www.desktopbackground.org/p/2010/06/08/29705_colored-smoke-bombs-wallpaper_920x920_h.jpg */
+.card:hover{
+  transform: scale(1.04);
+  border:3px solid #000;
+  background-color: rgb(242, 245, 248);
+  box-shadow: 2px 2px 15px rgba(33,33,33,.2); 
+  /* transition: box-shadow .3s; */
+}
+
+.carousel-engn{
+  background:url(https://inteng-storage.s3.amazonaws.com/images/import/2017/03/4-intel-circuit.jpg);
+  background-position: center center;
+    background-repeat: no-repeat; 
+  background-size: cover;
+  height:400px;
+}
+.carousel-med{
+  background:url(https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+  background-position: center center;
+    background-repeat: no-repeat; 
+  background-size: cover;
+  height:400px;
+}
+.carousel-law{
+  background:url(https://wallpaperaccess.com/full/702861.jpg);
+  background-position: center center;
+    background-repeat: no-repeat; 
+  background-size: cover;
+  height:400px;
+}
+.carousel-mba{
+  background:url(https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-position: center center;
+    background-repeat: no-repeat; 
+  background-size: cover;
+  height:400px;
+}
+.carousel-caption {
+  width:200px;
+  z-index:10;
+  color:white;
+  text-align:center;
+  margin-left:50px;
+  margin-top: 50px;
+  top:10%;
+  left:60%;
+  bottom:auto;
+  -webkit-transform:translate(0, -50%);
+  -ms-transform:translate(0, -50%);
+  transform:translate(0, -50%);
+  font-family: 'Raleway',sans-serif;
+  }
+
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#section{
+  margin-top:45px;
+}
+#carousel{
+  margin-bottom: 85px;
+  box-shadow: 0 5px 15px grey;
+}
+
+#video{
+  background:url(https://images.unsplash.com/photo-1548836005-cdeaf84ae2fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  height:42vh;
+  width:100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  box-shadow: 0 5px 15px grey;
+}

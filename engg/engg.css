@@ -4,13 +4,13 @@ body{
 /* NAVBAR */
 .navbar{
   border-bottom: 4px solid rgb(178, 182, 185);
-  box-shadow: 0 15px 25px #888888;
+  box-shadow: 0 5px 5px #888888;
   background-color:#000000;
   background:linear-gradient(147deg, #000000 0%, #202020 74%);
 }
 
 .auth{
-  text-align: left;
+  text-align: right;
 }
 /* BODY */
   /* IMAGE */
@@ -228,10 +228,6 @@ font-size:25px;
 	margin-bottom: 5px;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-}
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {

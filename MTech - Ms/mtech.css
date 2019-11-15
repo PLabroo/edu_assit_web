@@ -1,3 +1,9 @@
+body{
+	background:lightgray;
+	font-family: 'Raleway', serif;
+
+}
+
 .navbar{
     border-bottom: 4px solid rgb(178, 182, 185);
     box-shadow: 0 15px 25px #888888;
@@ -15,13 +21,10 @@
     border-image-slice: 1; */
     border-radius: 15%;
   }
-  body{
-	background:#e0e2e2;
-	font-family: 'Raleway',sans-serif;
-}
+
 
 .jumbotron{
-	background-image: url(https://images.shiksha.com/public/images/CHP/engineeringN.jpg);
+	background-image: url("http://iges.iitd.ac.in/jeew/banner.jpg");
 	  /* background-color: #cccccc; */
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -29,7 +32,7 @@
 	height:50vh;
 	box-shadow: 0 5px 10px #888888;
 	position: relative;
-	margin: 0;
+	margin: 0 0 40px 0;
 	}
 
 .name{
@@ -46,10 +49,20 @@
 
 .name h3{
 	margin: 5px 0;
+	font-weight: normal;
 }
-.lead{
-	text-align: center;
-	margin-top:15px;
+.intro{
+  border: 1px solid #e0e2e2;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  padding: 50px 50px;
+  margin: 0 15px;
+}
+
+.intro p{
+  font-size: 14px;
+  line-height: 1.75;
 }
 .row{
 	margin: 0;
@@ -59,21 +72,24 @@
   }
   
   .exam{
-	padding: 50px 0px 30px;
+	padding: 40px 0px 30px;
 	text-align: center;
   }
   
-  .crd h4{
+  h4{
 	font-size: 20px;
 	font-weight: bold;
   }
-  
+  h6{
+  font-weight: bold;
+}
   .crd p{
 	font-size: 14px;
   }
   
   .card{
 	height: 300px;
+	margin-bottom: 10px;
   }
 
   .card:hover{
@@ -85,13 +101,12 @@
   
   /* Exam Information */
   .info{
-	border: 1px solid #E0E2E2;
-	border-radius: 3px;
-	padding: 20px 0;
-	width: 96%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background-color: white;
+	  border: 1px solid #E0E2E2;
+  		border-radius: 3px;
+  		padding: 20px 0;
+  		margin: 40px auto;
+  		width: 98%;
+  		background-color: white;
   }
   .info table,th,td{
 	border: 1px solid #e0e2e2;
@@ -128,7 +143,7 @@
 	font-size: 14px !important;
   }
   
-#logo{
+img{
 height:60px;
 border-radius: 50%;
 }
@@ -136,7 +151,6 @@ h1{
 height:60px;
 }
 p{
-font-family: cursive;
 font-size:25px;
 }
 
@@ -169,7 +183,7 @@ font-size:25px;
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	font: normal 36px 'Times New Roman', cursive;
 	margin: 0;
 }
 
@@ -300,7 +314,16 @@ font-size:25px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-
+@media (max-width:1215px){
+	.card{
+		height: 350px;
+	}
+}
+@media (max-width:1070px){
+	.card{
+		height: 375px;
+	}
+}
 @media (max-width: 880px) {
 
 	.footer-distributed{

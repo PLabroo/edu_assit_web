@@ -1,3 +1,6 @@
+body{
+	font-family: 'Raleway',sans-serif;
+}
 .navbar{
     border-bottom: 4px solid rgb(178, 182, 185);
     background-color:#000000;
@@ -21,7 +24,7 @@
   }
 
 .jumbotron{
-	background-image: url("https://images.shiksha.com/public/images/CHP/businessN.jpg");
+	background-image: url("https://cdn.hipwallpaper.com/i/50/54/bkPQf0.jpg");
 	  /* background-color: #cccccc; */
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -29,7 +32,7 @@
 	height:50vh;
 	box-shadow: 0 5px 10px #888888;
 	position: relative;
-	margin: 0;
+	margin: 0 0 40px 0;
 	}
 
 .name{
@@ -47,9 +50,18 @@
 .name h3{
 	margin: 5px 0;
 }
-.lead{
-	text-align: center;
-	margin-top:15px;
+.intro{
+  border: 1px solid #e0e2e2;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  padding: 50px 50px;
+  margin: 0 15px;
+}
+
+.intro p{
+  font-size: 14px;
+  line-height: 1.75;
 }
 .row{
 	margin: 0;
@@ -63,11 +75,13 @@
 	text-align: center;
   }
   
-  .crd h4{
+  h4{
 	font-size: 20px;
 	font-weight: bold;
   }
-  
+  h6{
+	  font-weight: bold;
+  }
   .crd p{
 	font-size: 14px;
   }
@@ -128,7 +142,7 @@
 	font-size: 14px !important;
   }
   
-#logo{
+img{
 height:60px;
 border-radius: 50%;
 }
@@ -136,7 +150,6 @@ h1{
 height:60px;
 }
 p{
-font-family: cursive;
 font-size:25px;
 }
 
@@ -169,7 +182,7 @@ font-size:25px;
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	font: normal 36px 'Times New Roman', cursive;
 	margin: 0;
 }
 
@@ -300,7 +313,16 @@ font-size:25px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-
+@media (max-width:1375px){
+	.card{
+		height: 370px;
+	}
+}
+@media (max-width:1060px){
+	.card{
+		height: 400px;
+	}
+}
 @media (max-width: 880px) {
 
 	.footer-distributed{

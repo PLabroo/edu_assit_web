@@ -21,11 +21,11 @@ router.get("/engg/mba.html",function(req,res){
 });
 
 router.get("/engg/mtech-ms.html",function(req,res){
-  res.sendFile(path + "/MTechMs" + "/mtech-ms.html");
+  res.sendFile(path + "/MTechMS" + "/mtech-ms.html");
 });
 
 router.get("/engg/upsc.html",function(req,res){
-  res.sendFile(path + "/UPSC" + "/civil-services.html");
+  res.sendFile(path + "/Upsc" + "/civil-services.html");
 });
 
 router.get("/team.html",function(req,res){
@@ -51,8 +51,8 @@ router.get("/login.html", function (req, res) {
 app.use(express.static(path + '/Landing'))
 app.use(express.static(path + '/Engineering'))
 app.use('/engg',express.static(path + '/Mba'))
-app.use('/engg',express.static(path + '/MtechMs'))
-app.use('/engg',express.static(path + '/UPSC'))
+app.use('/engg',express.static(path + '/MtechMS'))
+app.use('/engg',express.static(path + '/Upsc'))
 app.use(express.static(path + '/Team'))
 app.use('/engg/mtech-ms',express.static(path + '/Resources'))
 app.use(express.static(path + '/signup'))

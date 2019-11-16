@@ -19,3 +19,15 @@ $('#signup').click(function () {
 $('#login').click(function () {
     document.getElementById("login").href = cur_url + 'login.html'
 });
+
+// CHATBOT
+function ShowDiv() {
+    if ($("#chatbot").hasClass("d-none")) {
+        document.getElementById("chatbot").classList.remove('d-none');
+        document.getElementById("chatbot").classList.add('is-visible');
+    }
+    else {
+        document.getElementById("chatbot").classList.add('d-none');
+        ocument.getElementById("chatbot").classList.remove('is-visible');
+    }
+}

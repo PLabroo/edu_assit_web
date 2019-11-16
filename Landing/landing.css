@@ -1,4 +1,6 @@
-
+body{
+	z-index: -1;
+}
 
 .navbar{
   border-bottom: 4px solid rgb(178, 182, 185);
@@ -24,6 +26,36 @@ box-shadow: 0 5px 10px #888888;
 /* image-rendering: pixelated; */
 }
 /* https://www.insidehighered.com/sites/default/server_files/media/swift_in_use_students_0.jpg */
+
+/* CHATBOT */
+#chatbotbtn{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 60px;
+	height: 60px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	background:#07d64cf5;
+	z-index: 2;
+	box-shadow: 0px 2px 2px black;
+}
+#chatbotbtn:hover{
+	transform: scale(1.25) !important;
+	filter: brightness(75%);
+}
+.chatbot{
+	position: fixed;
+	right: 55px;
+	bottom: 40px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.653);
+	z-index: 1;
+	border-radius: 5px;
+}
+
 
 #educare{
 border:3px solid linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);

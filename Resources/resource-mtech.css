@@ -1,0 +1,417 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+/* NAVBAR */
+.navbar{
+    border-bottom: 4px solid rgb(178, 182, 185);
+    /* box-shadow: 0 15px 25px #888888; */
+    background-color:#000000;
+    background:linear-gradient(147deg, #000000 0%, #202020 74%);
+    /* border-radius: 8%; */
+    /* -moz-border-image: -moz-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
+    -webkit-border-image: -webkit-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
+    /* border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
+    border-image-slice: 1; */
+}
+.navbar .nav-item.active {
+    border: 2px solid rgb(178, 182, 185);
+    /* border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
+    border-image-slice: 1; */
+    border-radius: 15%;
+}
+
+/* PARALLAX */
+.parallax{
+    background-image: url("https://thewallpaper.co//wp-content/uploads/2017/08preview/abstract-vector-mobile-wallpaper-abstract-tumblr-wallpaper-art-books-amazing-photos-abstract-wallpapers-full-hd.jpg");
+    height: 100%;
+	filter: opacity(85%);
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* JUMBOTRON */
+.jumbotron{
+	background-image: url("https://images.unsplash.com/photo-1543196614-e046c7d3d82e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1198&q=80");
+	filter: brightness(60%);
+	background-position: center 80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:40vh;
+	box-shadow: 0 5px 10px black	;
+	position: relative;
+	margin: 0;
+	border-radius: 0;
+	border-bottom: 3px solid black;
+	z-index: -1;
+}
+
+/* LINKS */
+.links{
+	background-color: lightgray;
+	padding-top: 15px;
+	width:92%;
+}
+.intro{
+	background-color: white;
+	font-size: 16px;
+	padding: 30px 15px;
+	width: 98%;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	text-align: center;
+}
+.heading{
+	text-align: center;
+}
+
+/* .gate, .gre, .toefl{
+	justify-content: center;
+	padding-top: ;
+} */
+
+/* .books{
+	border-radius: 5px 0 0 5px;
+	background-color:rgb(255, 254, 254);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.papers{
+	border-radius: 0 5px 5px 0;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 20px;
+}
+
+.g1{
+	margin: auto 0;
+}
+
+.card{
+	margin: 15px 0;
+} */
+
+.books{
+	padding-bottom: 50px;
+	text-align: center;
+	padding-right: 0;
+} 
+
+.papers{
+	padding-bottom: 50px;
+	text-align: center;
+	padding-left: 0;
+}
+.books h5, .papers h5{
+	font-weight: bolder;
+} 
+
+.gate-card,.gre-card,.toefl-card{
+	margin: 30px 0;
+	height: 325px;
+}
+.gate-buy, .gre-buy, .toefl-buy{
+	padding: 0 5px;
+	margin: auto 0; 
+}
+.card-header{
+	font-weight: bold;
+}
+.gate-buy .card-header, .gre-buy .card-header, .toefl-buy .card-header{
+	font-size: 12px;
+}
+.gate-link button, .gre-link button, .toefl-link button{
+	width: 50%;
+}
+img{
+	height: 40px;
+	width:40px;
+}
+.card-body p{
+	font-size: 13px;
+}
+.gate-card-1, .gre-card-1, .toefl-card-1{
+	height: 225px;
+	margin-bottom: 10px;
+}
+.gate-card-2, .gre-card-2, .toefl-card-2{
+	height: 225px;
+	margin-bottom: 10px;
+}
+.gate-link button{
+	width: 100px;
+	margin: 0 auto;
+}
+
+/* .gate-card .card-body, .gre-card .card-body, .toefl-card .card-body{
+	display: flex;
+	justify-content: space-evenly;
+} */
+
+/* FOOTER */
+#logo{
+	height: 60px;
+	width: 70px;
+	border-radius: 50%;
+}
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px;
+  padding: 55px 50px;
+  box-shadow:0 5px 15px grey;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 35%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Times New Roman', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:black;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width:1250px){
+	.gate-card-1, .gre-card-1, .toefl-card-1{
+	height: 270px;
+	}
+	.gate-card-2, .gre-card-2, .toefl-card-2{
+	height: 270px;
+	}
+	.gate-card,.gre-card,.toefl-card{
+	height: 350px;
+	}
+	button{
+		font-size: 12px !important;
+	}
+}
+@media (max-width: 1090px){
+	.gate-card,.gre-card,.toefl-card{
+	height: 400px;
+	}
+	.gate-card-1, .gre-card-1, .toefl-card-1{
+	height: 320px;
+	}
+	.gate-card-2, .gre-card-2, .toefl-card-2{
+	height: 320px;
+	}
+	button{
+		font-size: 10px !important;
+	}
+}
+@media (max-width: 990px){
+	/* .gate-card-1,.gate-card-2,.gre-card-1,.gre-card-2,.toefl-card-1,.gre-card-2{
+		height: auto;
+	} */
+	.gate-card,.gre-card,.toefl-card{
+	height: 500px;
+	}
+	.books .gate-card,.books .gre-card,.books .toefl-card{
+	height: 675px;
+	}
+	.books-container{
+	padding-right: 30px;
+	}
+	.paper-container{
+	padding-left: 30px;
+	}
+	.gate-card-1, .gre-card-1, .toefl-card-1{
+	height: 200px !important;
+	}
+	.gate-card-2, .gre-card-2, .toefl-card-2{
+	height: 200px !important;
+	}
+	button{
+		font-size: 14px !important;
+	}
+}
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+@media (max-width: 770px){
+	/* .gate-card,.gre-card,.toefl-card{
+	height: 900px !important;
+	} */
+	.gate-card-1, .gre-card-1, .toefl-card-1{
+	height: 200px !important;
+	}
+	.gate-card-2, .gre-card-2, .toefl-card-2{
+	height: 200px !important;
+	}
+}
+@media (max-width: 460px){
+	/* .gate-card-1,.gate-card-2,.gre-card-1,.gre-card-2,.toefl-card-1,.gre-card-2{
+		height: auto;
+	} */
+	.gate-card,.gre-card,.toefl-card{
+	height: 620px;
+	}
+	.books .gate-card,.books .gre-card,.books .toefl-card{
+	height: 700px;
+	}
+}

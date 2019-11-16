@@ -16,33 +16,47 @@ router.get("/engg.html",function(req,res){
   res.sendFile(path + "/Engineering" + "/engg.html");
 });
 
-router.get("/mba.html",function(req,res){
-  res.sendFile(path + "/mba" + "/mba.html");
+router.get("/engg/mba.html",function(req,res){
+  res.sendFile(path + "/Mba" + "/mba.html");
 });
 
-router.get("/mtech.html",function(req,res){
-  res.sendFile(path + "/MTech" + "/mtech.html");
+router.get("/engg/mtech-ms.html",function(req,res){
+  res.sendFile(path + "/MTechMs" + "/mtech-ms.html");
 });
 
-router.get("/upsc.html",function(req,res){
+router.get("/engg/upsc.html",function(req,res){
   res.sendFile(path + "/UPSC" + "/civil-services.html");
 });
 
 router.get("/team.html",function(req,res){
-  res.sendFile(path + "/team" + "/team.html");
+  res.sendFile(path + "/Team" + "/team.html");
 });
 
-router.get("/resources-mtech.html",function(req,res){
-  res.sendFile(path + "/Resources" + "/resource-mtech.html");
+router.get("/engg/mtech-ms/resources-mtech-ms.html",function(req,res){
+  res.sendFile(path + "/Resources" + "/resource-mtech-ms.html");
+});
+
+router.get("/engg/mtech-ms/resources-mtech-ms.html", function (req, res) {
+  res.sendFile(path + "/Resources" + "/resource-mtech-ms.html");
+});
+
+router.get("/signup.html", function (req, res) {
+  res.sendFile(path + "/signup" + "/signup.html");
+});
+
+router.get("/login.html", function (req, res) {
+  res.sendFile(path + "/login" + "/login.html");
 });
 
 app.use(express.static(path + '/Landing'))
 app.use(express.static(path + '/Engineering'))
-app.use(express.static(path + '/mba'))
-app.use(express.static(path + '/Mtech'))
-app.use(express.static(path + '/UPSC'))
-app.use(express.static(path + '/team'))
-app.use(express.static(path + '/Resources'))
+app.use('/engg',express.static(path + '/Mba'))
+app.use('/engg',express.static(path + '/MtechMs'))
+app.use('/engg',express.static(path + '/UPSC'))
+app.use(express.static(path + '/Team'))
+app.use('/engg/mtech-ms',express.static(path + '/Resources'))
+app.use(express.static(path + '/signup'))
+app.use(express.static(path + '/login'))
 
 
 app.use("/",router);

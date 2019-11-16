@@ -103,6 +103,7 @@ margin: 0 0 40px 0;
   background-color: white;
   padding: 50px 50px;
   margin: 0 15px;
+  overflow: hidden;
 }
 
 .intro p{
@@ -140,7 +141,7 @@ h6{
   margin-bottom: 10px;
 }
 .card:hover{
-  transform: scale(1.04);
+  transform: scale(1.04) !important;
   border:1px solid #000;
   background-color: #e0e2e2;
   box-shadow: 2px 2px 15px rgba(33,33,33,.2);
@@ -378,3 +379,108 @@ h6{
 		margin-left: 0;
 	}
 }
+
+/* ANIMATION */
+.card1{
+  transform: translateY(4em);
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+  
+}
+
+.card1.is-visible{
+  transform: translateY(0em);
+  opacity: 1;
+}
+
+.card2{
+  transform: translateY(4em);
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+  
+}
+
+.card2.is-visible{
+  transform: translateY(0em);
+  opacity: 1;
+}
+
+.card3{
+  transform: translateY(4em);
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+  
+}
+
+.card3.is-visible{
+  transform: translateY(0em);
+  opacity: 1;
+}
+
+.head{
+  transform: translateX(-40em);
+  opacity: 0;
+  transition: transform 7s .5s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+}
+
+.head.is-visible{
+  transform: translateX(0em);
+  opacity: 1;
+}
+
+.cbody{
+  transform: translateY(15em);
+  opacity: 0;
+  transition: transform 7s .5s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+}
+
+.cbody.is-visible{
+  transform: translateY(0em);
+  opacity: 1;
+}
+
+.intro-head{
+  transform: translateX(-40em);
+  opacity: 0;
+  transition: 3s .5s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+}
+
+.intro-head.is-visible{
+  transform: translateX(0em);
+  opacity: 1;
+}
+
+.intro-body{
+  
+  transform: translateX(-1000em);
+  opacity: 0;
+  transition: opacity 3s 1s ease-out,transform 3s 0s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+}
+
+.intro-body.is-visible{
+  opacity: 1;
+  transform: translateX(0em);
+}
+
+/* 
+.info{
+  transform: translateY(1em);
+  opacity: 0;
+  transition: transform .25s 0s;
+  will-change: transform,opacity;
+}
+
+.info.show{
+  transform: translateY(0em);
+  opacity: 1;
+} */

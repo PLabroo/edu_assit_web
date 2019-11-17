@@ -27,3 +27,71 @@ $('#signup').click(function () {
 $('#login').click(function () {
     document.getElementById("login").href = cur_url.replace('engg.html', 'login.html')
 });
+
+
+// ANIMATION
+// On scroll
+var scroll = window.requestAnimationFrame ||
+    function (callback) { window.setTimeout(callback, 1000 / 60) };
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
+function loop() {
+
+    elementsToShow.forEach(function (element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('is-visible');
+        } else {
+            element.classList.remove('is-visible');
+        }
+    });
+
+    scroll(loop);
+}
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+        (rect.top <= 0
+            && rect.bottom >= 0)
+        ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+        ||
+        (rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+}
+
+// Navbar
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    console.log(prevScrollpos);
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").classList.add('fixed-top');
+    } else {
+        document.getElementById("navbar").classList.remove('fixed-top');
+    }
+    prevScrollpos = currentScrollPos;
+}
+
+// LOGO
+function book() {
+    let logo = document.getElementById('book');
+    logo.classList.add('fa-book');
+    logo.classList.remove('fa-book-open');
+
+    setTimeout(function () {
+        logo.classList.remove('fa-book');
+        logo.classList.add('fa-book-open');
+    }, 1000);
+}
+
+book();
+setInterval(book, 2000);

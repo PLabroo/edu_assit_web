@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="mtech.css">
   <link rel="icon" type=""
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADgCAMAAADCMfHtAAAAb1BMVEUAAAD///9lZWXKysri4uJgYGDR0dF/f3+2tra5ubl8fHz4+Phzc3Pp6ek1NTVTU1OQkJDw8PBHR0exsbFZWVmkpKTCwsI7Ozurq6sODg5ubm7X19cwMDAfHx+YmJgpKSlDQ0MXFxeIiIiUlJSenp4y83ZuAAAEaElEQVR4nO2c2ZriIBBGO+4al5hoa7vr+P7POBPt6ZFQJFAkFfzmP7cGmtMQlgLy8QEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/y/H/i3JRjnjUzJdfbVVjkXHhxWd6XGY9SKNfTaZy8o9GOglcaBD5JhuZ+YEy6wvbdj18BsQ+Z1K9J7EmWxNehiutczOY8t/jaF1B2aot9BP+8Q9uXpkG6bFnO5u6UehG24K+SyWrjnEVDcVjmFRcM3JZByw4aWQCzH62TC7hmpYaF+bmCf4h0WYhic1i5TtF9FzhtYNuzUKRlESnmFcq2Dzo4a7oToQbjwFu4ZytWi4VdPzO5kHvcYFnQ0LbZQ5TPxlKbBq1A1nvRJmat+XlRV/cOoc8oeO893dsEg7Ny9IGDoMUSuz3ri4DlyN9IcERkPK0GGJanwJ1+RkJSnMXXd1SZTiY7g1+A2OphTJ6//kVy0ClXgYzg2Ck7JE/9aQMvNuL0O6G461haNK/7sa974lt4VvSFdhXN3/7/Pnln7FdoBvSFahheBjMRlXP1UXbMMzWYUXq7TD6MAusDNsQ7IjLe1kWoJtSI2FzU+jGXANd1QVNlxWHlxDKjba+GKWBdeQaKSC/aMLTENqZX9vuqw8mIZUgLu1HcJydEOrXRNivUftRIWAbnifDCluyiBNvIbDthQqsI9ivC75ru/TSB0MX1P19Z/lptKOWBvOXlPd9N+DnM/kWBsqcT+iK9V3hAPB2lBZkhO72SFOuh/UZjhty6AKniExHLZxVMYKa0NlWk2Euou7wsFQm+H716GyI0MYXtopfzXoaX5QdjIJw1tbBlVYGyoRXOJwydb0F9qGN6dJ9N/ff9amzLw7+s+BxjAow/2ARGmlVDhYYreTA3OHlDAMM9LGjtPsdcP3iWJYGVIxfeO+aLswDYmuJtQVIjciTBiGGdRnG1LHR8IMCXMNJ1QlBhluY++uUYZBzmvYhuTBfNuo8EXojHcO23BBGUYX27RyNy74JxWIQd/ypMI0f1Jsksc3nJKVaKH4fdxP6rCCx4kh+uRl1Ymh608yIUUPQ/pNrIgNv+4HyCj6nNwzrS27xpZ6UetdJD7nY/hlMDTNblJtIiSh6HWClpzYPPksZnNNqPdWQNH1FPSuIvWrZNJ/vmmH/i0zXbxsXtHzJLvnUX0JRefbCOrB14O3oX6RsW3DwnyL2O92pOnQgPetIHpqY094rVQLOXkpxuH1NDmFgIyHosQBDtYNy8I+E/tdFDnNzrslW5j3bJyvOT+Quc5d001nTjZCO4513VZ3fhl7ErecfQz1CbrDFxUiyQ1V/lcjtEaW2l9GlLoR5GdIRPE7dt+CGUs1UF9DqrOfV37dZCm9veH3BR7qBuHu07zgWGaS32154vcVpSkdr0hPXX2E7I0mgneBJEh3yfr5Iax7MmnvQ1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAO/Aah2MiSkeJv2AAAAAElFTkSuQmCC">
-  <title>Mtech&M.S</title>
+  <title>M.Tech - M.S</title>
 </head>
 
 <body>
@@ -21,41 +21,43 @@
 
   <!-- Navbar-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navbar">
     <div class="container-fluid">
-      <a style="font-family:Raleway,sans-serif" href="#" class="navbar-brand ml-0"><i
-          class="fas fa-book-open">&nbsp;EduCare</i></a>
+      <a href="#" class="navbar-brand ml-0">
+        <div class="fas" id="book">&nbsp;EduCare</div>
+      </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarcollapse">
         <ul class="nav navbar-nav mt-1">
           <li class="nav-item">
-            <a href="#" class="nav-link">HOME</a>
+            <a href="#home" class="nav-link active">HOME</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#features" class="nav-link">FEATURES</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">FEATURES</a>
+            <a href="#section" class="nav-link">SECTIONS</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">SECTIONS</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">CONTACT US</a>
-          </li>
+            <a href="#footer" class="nav-link">CONTACT US</a>
+          </li> -->
         </ul>
-        <div class="nav navbar-nav navbar-right ml-auto mt-auto">
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href="" id="signup"><span
-                  class="fas fa-user-plus"></span>&nbsp;SIGN UP</a></li>
+        <div class="nav navbar-nav navbar-right ml-auto">
+          <ul style="margin: auto 0;">
+            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+                id="signup"></span>&nbsp;SIGN UP</a></li>
           </ul>
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href="" id="login"><span
-                  class="fas fa-sign-in-alt"></span>&nbsp;LOGIN</a></li>
+          <ul style="margin:auto 0">
+            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+                id="login"></span>&nbsp;LOGIN</a></li>
           </ul>
         </div>
       </div>
+  
     </div>
-  </nav>
+  </div>
 
   <!-- jumbotron -->
   <div class="jumbotron jumbotron-fluid">
@@ -832,7 +834,7 @@
   <!--FOOTER-->
   <footer class="footer-distributed">
     <div class="footer-left">
-      <h3><img id="logo" src="logose.png">&nbsp;<span>EduCare</span></h3>
+      <h3><img class="foot" src="logose.png">&nbsp;<span>EduCare</span></h3>
       <p class="footer-links">
         <a href="" id="home" class="link-1">Home</a>
         <a href="" id="team">The Team</a>

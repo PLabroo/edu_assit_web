@@ -1,8 +1,8 @@
 .navbar{
-    border-bottom: 4px solid rgb(178, 182, 185);
-    background-color:#000000;
-    background:linear-gradient(147deg, #000000 0%, #202020 74%);
-  }
+  border-bottom: 2px solid rgb(178, 182, 185);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.537);
+  background-color:#000000;
+}
   
   img{
     height:60px;
@@ -10,10 +10,6 @@
     }
     h1{
     height:60px;
-    }
-    p{
-    font-family: cursive;
-    font-size:25px;
     }
 
 :root {
@@ -126,7 +122,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: bold 20px sans-serif;
   padding: 55px 50px;
   box-shadow:0 5px 15px grey;
 }
@@ -141,15 +137,16 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 35%;
+	width: 40%;
 }
 
 /* The company logo */
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	font: normal 36px;
 	margin: 0;
+	font-size: 40px;
 }
 
 .footer-distributed h3 span{
@@ -246,7 +243,7 @@
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
@@ -254,7 +251,7 @@
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -268,12 +265,14 @@
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color: #33383b;
+	background-color:  #33383b;
 	border-radius: 2px;
+
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
+
 	margin-right: 3px;
 	margin-bottom: 5px;
 }

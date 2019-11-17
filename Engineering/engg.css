@@ -1,21 +1,16 @@
 body{
-  font-family: 'Raleway',sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: lightgray;
 }
 /* NAVBAR */
 .navbar{
-  border-bottom: 4px solid rgb(178, 182, 185);
-  box-shadow: 0 5px 5px #888888;
+  border-bottom: 2px solid rgb(178, 182, 185);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.537);
   background-color:#000000;
-  background:linear-gradient(147deg, #000000 0%, #202020 74%);
-}
-
-.auth{
-  text-align: right;
 }
 /* BODY */
   /* IMAGE */
-  .jumbotron{
+.jumbotron{
   background: url("https://www.sharda.ac.in/blog/wp-content/uploads/2019/07/degree-to-pursue-after-Btech-MTech-ME-or-MBA.jpg");
 
     /* background-color: #cccccc; */
@@ -25,6 +20,10 @@ body{
   height:55vh;
   box-shadow: 0 5px 10px #888888;
   margin: 0;
+}
+
+.hover:hover{
+	filter: brightness(85%);
 }
 
   /* COURSES */
@@ -41,11 +40,6 @@ body{
   .row p{
     margin-top: 10px;
     font-size: 15px;
-    font-family: 'Raleway',sans-serif;
-  }
-
-  .row h2,h4{
-    font-family: 'Times New Roman',sans-serif !important;
   }
 
   .card{
@@ -53,7 +47,7 @@ body{
   }
 
   .card:hover{
-    transform: scale(1.04);
+    transform: scale(1.04) !important;
     border:1px solid #000;
     background-color: #e0e2e2;
     box-shadow: 2px 2px 15px rgba(33,33,33,.2);
@@ -64,20 +58,15 @@ height:60px;
 border-radius: 50%;
 }
 
-footer p{
-font-family: 'Raleway',sans-serif;
-font-size:25px;
-}
-
 .footer-distributed{
 	background: #666;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
-  padding: 17px 50px;
-  font-family:'Raleway',sans-serif !important;
+	font: bold 20px sans-serif;
+  padding: 55px 50px;
+  box-shadow:0 5px 15px grey;
 }
 
 .footer-distributed .footer-left,
@@ -97,8 +86,9 @@ font-size:25px;
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	font: normal 36px;
 	margin: 0;
+	font-size: 40px;
 }
 
 .footer-distributed h3 span{
@@ -147,7 +137,7 @@ font-size:25px;
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center .fa-envelope{
+.footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
@@ -195,7 +185,7 @@ font-size:25px;
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
@@ -203,7 +193,7 @@ font-size:25px;
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -228,6 +218,7 @@ font-size:25px;
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
@@ -255,4 +246,73 @@ font-size:25px;
   .card{
     height: 270px;
   }
+}
+
+
+/* Animation */
+.card-anim{
+  transform: translateY(4em);
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+  
+}
+
+.card-anim.is-visible{
+  transform: translateY(0em);
+  opacity: 1;
+}
+
+.head{
+  transform: translateX(-40em);
+  opacity: 0;
+  transition: transform 7s .5s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+}
+
+.head.is-visible{
+  transform: translateX(0em);
+  opacity: 1;
+}
+
+.cbody{
+  transform: translateY(5em);
+  opacity: 0;
+  transition: transform 7s .5s cubic-bezier(0,1,.3,1);
+  will-change: transform,opacity;
+}
+
+.cbody.is-visible{
+  transform: translateY(0em);
+  opacity: 1;
+}
+
+.title{
+	/* transform: translateX(-10em); */
+	opacity: 0;
+	transition: opacity 10s .5s cubic-bezier(0,1,.3,1);
+	will-change: opacity;
+}
+.title.is-visible{
+	transform: translateX(0em);
+	opacity: 1;
+}
+
+.jumbotron-anim{
+	filter: brightness(70%);
+	transition: filter 6s 1s cubic-bezier(0,1,.3,1);
+	will-change: filter;
+} 
+.jumbotron-anim.is-visible{
+	filter: brightness(100%);
+}
+
+#navbar{
+	transform: translateY(-5em);
+	transition: transform 1.5s .25s cubic-bezier(0,1,.3,1);
+	will-change: transform;
+}
+#navbar.fixed-top{
+	transform: translateY(0em);
 }

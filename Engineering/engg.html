@@ -17,52 +17,62 @@
 <body>
   <!-- Navbar-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-    <div class="container-fluid">
-      <a style="font-family:Raleway,sans-serif" href="#" class="navbar-brand ml-0"><i class="fas fa-book-open">&nbsp;EduCare</i></a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarcollapse">
-        <ul class="nav navbar-nav mt-1">
-          <li class="nav-item active">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">SECTIONS</a>
-          </li>
-          <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">CONTACT US</a>
-          </li>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand ml-0">
+      <div class="fas" id="book">&nbsp;EduCare</div>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarcollapse">
+      <ul class="nav navbar-nav mt-1">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active">HOME</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="#features" class="nav-link">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section" class="nav-link">SECTIONS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#footer" class="nav-link">CONTACT US</a>
+        </li> -->
+      </ul>
+      <div class="nav navbar-nav navbar-right ml-auto">
+        <ul style="margin: auto 0;">
+          <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+              id="signup"></span>&nbsp;SIGN UP</a></li>
         </ul>
-        <div class="nav navbar-nav navbar-right ml-auto mt-auto">
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;font-family:Raleway,sans-serif;text-decoration: none;" href="" id="signup"><span class="fas fa-user-plus"></span>&nbsp;SIGN UP</a></li>
-          </ul>
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;font-family:Raleway,sans-serif;text-decoration: none;" href="" id="login"><span class="fas fa-sign-in-alt"></span>&nbsp;LOGIN</a></li>
-          </ul>
-        </div>
+        <ul style="margin:auto 0">
+          <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+              id="login"></span>&nbsp;LOGIN</a></li>
+        </ul>
       </div>
-
     </div>
-  </nav>
+
+  </div>
+</nav>
   <!-- BODY -->
   <section>
-    <div class="jumbotron">
+    <div class="hover">
+      <div class="jumbotron show-on-scroll jumbotron-anim">
+      </div>
     </div>
   </section>
 
   <section id="courses">
     <div class="row">
       <div class="col-lg-4">
-        <h2>Technical</h2>
-        <div class="card" id="mtech-ms">
-          <div class="card-header">M.Tech / M.S</div>
-          <div class="card-body">
+        <div class="show-on-scroll title">
+          <h2>Technical</h2>
+        </div>
+        <div class="card show-on-scroll card-anim" id="mtech-ms">
+          <div class="card-header"><div class="show-on-scroll head">
+            M.Tech / M.S
+          </div></div>
+          <div class="card-body show-on-scroll cbody">
             <h4>Master of Technology / Science</h4>
             <p>MTech/MS is a professional <b>postgraduate</b> engineering master degree programme awarded to candidates after completion of two years of study in the discipline of engineering.
 
@@ -72,10 +82,14 @@
       </div>
 
       <div class="col-lg-4">
-        <h2>Managment</h2>
-        <div class="card" id="mba">
-          <div class="card-header">MBA</div>
-          <div class="card-body">
+        <div class="show-on-scroll title">
+          <h2>Managment</h2>
+        </div>
+        <div class="card show-on-scroll card-anim" id="mba">
+          <div class="card-header"><div class="show-on-scroll head">
+            MBA
+          </div></div>
+          <div class="card-body show-on-scroll cbody">
             <h4>Master of Business Administration</h4>
             <p>The Master of Business Administration (MBA) is an internationally-recognized degree designed to develop the skills required for careers in <b>business and management</b>.</p>
           </div>
@@ -83,10 +97,14 @@
       </div>
 
       <div class="col-lg-4">
-        <h2>UPSC</h2>
-        <div class="card" id="upsc">
-          <div class="card-header">Civil Services</div>
-          <div class="card-body">
+        <div class="show-on-scroll title">
+          <h2>UPSC</h2>
+        </div>
+        <div class="card show-on-scroll card-anim" id="upsc">
+          <div class="card-header"><div class="show-on-scroll head">
+            Civil Services
+          </div></div>
+          <div class="card-body show-on-scroll cbody">
             <h4>Indian Civil Services</h4>
             <p>The Civil Services refer to the career <b>bureaucrats</b> who are the permanent executive branch of the <b>Republic of India</b>. The civil service system is the backbone of the administrative machinery of the country.</p>
           </div>
@@ -103,7 +121,7 @@
   <!--FOOTER-->
   <footer class="footer-distributed">
     <div class="footer-left">
-      <h3><img src="logose.png">&nbsp;<span style="font-family: 'open-sans'">EduCare</span></h3>
+      <h3><img src="logose.png">&nbsp;<span>EduCare</span></h3>
       <p class="footer-links">
         <a href="" id="home" class="link-1">Home</a>
         <a href="" id="team">The Team</a>

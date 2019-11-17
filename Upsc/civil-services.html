@@ -26,45 +26,43 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-    <div class="container-fluid  navcont">
-      <a style="font-family:Raleway,sans-serif" href="#" class="navbar-brand ml-0"><i class="fas fa-book-open">&nbsp;EduCare</i></a>
+  <div class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand ml-0">
+        <div class="fas" id="book">&nbsp;EduCare</div>
+      </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarcollapse">
         <ul class="nav navbar-nav mt-1">
-          <li class="nav-item active">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">HOME</a>
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">HOME</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#features" class="nav-link">FEATURES</a>
           </li>
           <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">FEATURES</a>
+            <a href="#section" class="nav-link">SECTIONS</a>
           </li>
           <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">SECTIONS</a>
-          </li>
-          <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">CONTACT US</a>
-          </li>
+            <a href="#footer" class="nav-link">CONTACT US</a>
+          </li> -->
         </ul>
-        <div class="nav navbar-nav navbar-right ml-auto mt-auto">
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;font-family:Raleway,sans-serif;text-decoration: none;" href="" id="signup"><span class="fas fa-user-plus"></span>&nbsp;SIGN UP</a></li>
+        <div class="nav navbar-nav navbar-right ml-auto">
+          <ul style="margin: auto 0;">
+            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+                id="signup"></span>&nbsp;SIGN UP</a></li>
           </ul>
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;font-family:Raleway,sans-serif;text-decoration: none;" href="" id="login"><span class="fas fa-sign-in-alt"></span>&nbsp;LOGIN</a></li>
+          <ul style="margin:auto 0">
+            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+                id="login"></span>&nbsp;LOGIN</a></li>
           </ul>
         </div>
-        <!-- <ul class="nav navbar-nav mt-1">
-          <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#home" class="nav-link active i pop"><i class="fas fa-home">&nbsp;<p class="poptxt">HOME</p></i></a>
-          </li>
-        </ul> -->
       </div>
-
+  
     </div>
-  </nav>
+  </div>
 
   <!-- jumbotron -->
   <div class="jumbotron jumbotron-fluid">
@@ -97,7 +95,7 @@
       <h2>EXAMS</h2>
       <div class="row">
         <div class="col-lg-4 col-md-6 " data-toggle="collapse" href="#exam1" role="button" aria-expanded="false" aria-controls="exam1" href="#exam1">
-          <div class="card crd show-on-scroll card1">
+          <div class="card crd show-on-scroll card-anim">
             <div class="card-header">
               <div class="show-on-scroll head">
                 CSE
@@ -110,7 +108,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6" data-toggle="collapse" href="#exam2" role="button" aria-expanded="false" aria-controls="exam2">
-          <div class="card crd show-on-scroll card2">
+          <div class="card crd show-on-scroll card-anim">
             <div class="card-header">
               <div class="show-on-scroll head">
                 ESE
@@ -124,7 +122,7 @@
           </div>
         </div>
         <div class="col-lg-4" data-toggle="collapse" href="#exam3" role="button" aria-expanded="false" aria-controls="exam3">
-          <div class="card crd show-on-scroll card3">
+          <div class="card crd show-on-scroll card-anim">
             <div class="card-header">
               <div class="show-on-scroll head">
                 CDS
@@ -181,7 +179,7 @@
         </table>
         <br>
         <h6>Application Form:</h6>
-        <a href="https://www.upsc.gov.in/examinations/Civil%20Services%20%28Preliminary%29%20Examination%2C%202019"><input class="btn btn-primary" type="button" name="Form" value="Form"></a>
+        <a href="https://www.upsc.gov.in/examinations/Civil%20Services%20%28Preliminary%29%20Examination%2C%202019"><input class="btn btn-info" type="button" name="Form" value="Form"></a>
         <hr>
       </div>
       <div class="cse elig">
@@ -369,7 +367,7 @@
         </ol>
         <hr>
         <h6>Complete Syllabus and More Information:</h6>
-        <a href="https://upsc.gov.in/sites/default/files/Final_Notice_CSPE_2019_N.pdf"><input type="button" value="Syllabus" name="Syllabus" class="btn btn-primary"></a>
+        <a href="https://upsc.gov.in/sites/default/files/Final_Notice_CSPE_2019_N.pdf"><input type="button" value="Syllabus" name="Syllabus" class="btn btn-info"></a>
       </div>
     </div>
     <!-- EXAM 2 -->
@@ -416,7 +414,7 @@
         </table>
         <br>
         <h6>Application Form:</h6>
-        <a href="https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202020"><input class="btn btn-primary" type="button" name="Form" value="Form"></a>
+        <a href="https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202020"><input class="btn btn-info" type="button" name="Form" value="Form"></a>
         <hr>
       </div>
       <div class="ese elig">
@@ -537,7 +535,7 @@
         </ol>
         <hr>
         <h6>Complete Syllabus and More Information:</h6>
-        <a href="https://upsc.gov.in/sites/default/files/Notice-ESEP-2020-Engl.pdf"><input type="button" value="Syllabus" name="Syllabus" class="btn btn-primary"></a>
+        <a href="https://upsc.gov.in/sites/default/files/Notice-ESEP-2020-Engl.pdf"><input type="button" value="Syllabus" name="Syllabus" class="btn btn-info"></a>
       </div>
     </div>
 
@@ -607,7 +605,7 @@
         </ol>
         <br>
         <h6>Application Form:</h6>
-        <a href="https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202020"><input class="btn btn-primary" type="button" name="Form" value="Form"></a>
+        <a href="https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202020"><input class="btn btn-info" type="button" name="Form" value="Form"></a>
         <hr>
       </div>
       <div class="cds elig">
@@ -678,18 +676,19 @@
           Hyderabad, Officers’ Training Academy, Chennai.</p>
         <hr>
         <h6>Complete Syllabus and More Information:</h6>
-        <a href="https://upsc.gov.in/sites/default/files/Notice-CDSI2020-Engl-Final.pdf"><input type="button" value="Syllabus" name="Syllabus" class="btn btn-primary"></a>
+        <a href="https://upsc.gov.in/sites/default/files/Notice-CDSI2020-Engl-Final.pdf"><input type="button" value="Syllabus" name="Syllabus" class="btn btn-info"></a>
       </div>
     </div>
   </section>
-  <!-- Chat bot -->
 
-
+<div class="resource">
+  <button class="btn btn-info" id="resource">Resources</button>
+</div>
 
   <!-- Footer -->
   <footer class="footer-distributed">
     <div class="footer-left">
-      <h3><img src="logose.png">&nbsp;<span>EduCare</span></h3>
+      <h3><img class="foot" src="logose.png">&nbsp;<span>EduCare</span></h3>
       <p class="footer-links">
         <a href="" id="home" class="link-1">Home</a>
         <a href="" id="team">The Team</a>
@@ -714,7 +713,8 @@
     <div class="footer-right">
       <p class="footer-company-about">
         <span>About The Company</span>
-        EduCare is a platform designed to help, you, the students, in taking the daunting decision for there unknown future.
+        EduCare is a platform designed to help, you, the students, in taking the daunting decision for there unknown
+        future.
       </p>
       <div class="footer-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>

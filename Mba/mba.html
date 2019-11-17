@@ -14,43 +14,48 @@
   <title>MBA</title>
 </head>
 
-<body style="font-family: 'Raleway',sans-serif">
+<body>
   <!-- START HERE -->
 
   <!-- Navbar-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navbar">
     <div class="container-fluid">
-      <a style="font-family:Raleway,sans-serif" href="#" class="navbar-brand ml-0"><i class="fas fa-book-open">&nbsp;EduCare</i></a>
+      <a href="#" class="navbar-brand ml-0">
+        <div class="fas" id="book">&nbsp;EduCare</div>
+      </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarcollapse">
         <ul class="nav navbar-nav mt-1">
           <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">HOME</a>
+            <a href="#home" class="nav-link active">HOME</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#features" class="nav-link">FEATURES</a>
           </li>
           <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">FEATURES</a>
+            <a href="#section" class="nav-link">SECTIONS</a>
           </li>
           <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">SECTIONS</a>
-          </li>
-          <li class="nav-item">
-            <a style="font-family:Raleway,sans-serif" href="#" class="nav-link">CONTACT US</a>
-          </li>
+            <a href="#footer" class="nav-link">CONTACT US</a>
+          </li> -->
         </ul>
-        <div class="nav navbar-nav navbar-right ml-auto mt-auto">
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;font-family:Raleway,sans-serif;text-decoration: none;" href="" id="signup"><span class="fas fa-user-plus"></span>&nbsp;SIGN UP</a></li>
+        <div class="nav navbar-nav navbar-right ml-auto">
+          <ul style="margin: auto 0;">
+            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+                id="signup"></span>&nbsp;SIGN UP</a></li>
           </ul>
-          <ul>
-            <li style="list-style-type:none"><a style="color:#fff;font-family:Raleway,sans-serif;text-decoration: none;" href="" id="login"><span class="fas fa-sign-in-alt"></span>&nbsp;LOGIN</a></li>
+          <ul style="margin:auto 0">
+            <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
+                id="login"></span>&nbsp;LOGIN</a></li>
           </ul>
         </div>
       </div>
+  
     </div>
-  </nav>
+  </div>
 
   <!-- jumbotron -->
   <div class="jumbotron jumbotron-fluid">
@@ -314,10 +319,14 @@
       </div>
       <br>
 
+      <div class="resource">
+        <button class="btn btn-info" id="resource">Resources</button>
+      </div>
+
     <!--FOOTER-->
     <footer class="footer-distributed">
       <div class="footer-left">
-        <h3><img id="logo" src="logose.png">&nbsp;<span>EduCare</span></h3>
+        <h3><img class="foot" src="logose.png">&nbsp;<span>EduCare</span></h3>
         <p class="footer-links">
           <a href="" id="home" class="link-1">Home</a>
           <a href="" id="team">The Team</a>
@@ -342,7 +351,8 @@
       <div class="footer-right">
         <p class="footer-company-about">
           <span>About The Company</span>
-          EduCare is a platform designed to help, you, the students, in taking the daunting decision for there unknown future.
+          EduCare is a platform designed to help, you, the students, in taking the daunting decision for there unknown
+          future.
         </p>
         <div class="footer-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>

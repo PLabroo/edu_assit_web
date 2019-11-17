@@ -1,34 +1,22 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
 }
 
 /* NAVBAR */
 .navbar{
-    border-bottom: 4px solid rgb(178, 182, 185);
-    /* box-shadow: 0 15px 25px #888888; */
-    background-color:#000000;
-    background:linear-gradient(147deg, #000000 0%, #202020 74%);
-    /* border-radius: 8%; */
-    /* -moz-border-image: -moz-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
-    -webkit-border-image: -webkit-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
-    /* border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
-    border-image-slice: 1; */
-}
-.navbar .nav-item.active {
-    border: 2px solid rgb(178, 182, 185);
-    /* border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
-    border-image-slice: 1; */
-    border-radius: 15%;
+  border-bottom: 2px solid rgb(178, 182, 185);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.537);
+  background-color:#000000;
 }
 
 /* PARALLAX */
 .parallax{
     background-image: url("https://thewallpaper.co//wp-content/uploads/2017/08preview/abstract-vector-mobile-wallpaper-abstract-tumblr-wallpaper-art-books-amazing-photos-abstract-wallpapers-full-hd.jpg");
     height: 100%;
-	filter: opacity(85%);
+	/* filter: opacity(85%); */
   /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -166,7 +154,7 @@ img{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px;
+	font: bold 20px sans-serif;
   padding: 55px 50px;
   box-shadow:0 5px 15px grey;
 }
@@ -181,15 +169,16 @@ img{
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 35%;
+	width: 40%;
 }
 
 /* The company logo */
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Times New Roman', cursive;
+	font: normal 36px;
 	margin: 0;
+	font-size: 40px;
 }
 
 .footer-distributed h3 span{
@@ -286,7 +275,7 @@ img{
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
@@ -294,7 +283,7 @@ img{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -308,12 +297,14 @@ img{
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color: #33383b;
+	background-color:  #33383b;
 	border-radius: 2px;
+
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
+
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
@@ -414,4 +405,14 @@ img{
 	.books .gate-card,.books .gre-card,.books .toefl-card{
 	height: 700px;
 	}
+}
+
+/* Animation */
+#navbar{
+	transform: translateY(-5em);
+	transition: transform 1.5s .25s cubic-bezier(0,1,.3,1);
+	will-change: transform;
+}
+#navbar.fixed-top{
+	transform: translateY(0em);
 }

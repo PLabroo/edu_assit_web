@@ -58,6 +58,30 @@ $('#team').click(function () {
     
 });
 
+$('#resell').click(function () {
+    alert('fuck');
+    if (cur_url.includes('#home')) {
+        cur_url = cur_url.replace('#home', 'resell.html')
+        window.location = cur_url;
+    }
+    else if (cur_url.includes('#features')) {
+        cur_url = cur_url.replace('#features', 'resell.html')
+        window.location = cur_url;
+    }
+    else if (cur_url.includes('#section')) {
+        cur_url = cur_url.replace('#section', 'resell.html')
+        window.location = cur_url;
+    }
+    else if (cur_url.includes('#footer')) {
+        cur_url = cur_url.replace('#footer', 'resell.html')
+        window.location = cur_url;
+    }
+    else{
+        window.location = cur_url + 'resell.html';
+    }
+
+});
+
 $('#signup').click(function () {
     if (cur_url.includes('#home')) {
         cur_url = cur_url.replace('#home', 'signup.html')

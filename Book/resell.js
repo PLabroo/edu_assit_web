@@ -54,7 +54,7 @@ $('#post').on('click', function (event) {
     console.log(image);
     var title = $('#title');
     var price = $('#price');
-    var desc = CKEDITOR.instances['desc'].getData();
+    var desc = $('#desc');
     var contact = $('#contact')
 
     if(title == "" || price == "" || desc == "" || contact == "" || image == ""){
@@ -79,7 +79,7 @@ $('#post').on('click', function (event) {
                                     <h6>Contact: <span>${contact.val()}</span></h6>
                                 </p>
                                 <p>
-                                    <h6>Description: <span>${desc}</span></h6>
+                                    <h6>Description: <span>${desc.val()}</span></h6>
                                 </p>
                                 <p>
                                     <h6>Date: <span>${date}</span></h6>

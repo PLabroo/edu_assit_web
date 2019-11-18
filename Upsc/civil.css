@@ -9,50 +9,7 @@ body{
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.537);
   background-color:#000000;
 }
-/* .i{
-  color: white;
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-}
-.i:hover{
-  color: white;
-}
-.pop{
-  position: relative;
-  display: inline-block;
-}
-.pop .poptxt{
-  visibility: hidden;
-  width: auto;
-  background-color: lightgrey;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  margin-top: 10px;
-  font-size: 14px;
-  font-family: 'Raleway',sans-serif;
 
-  position: absolute;
-  z-index: 1;
-}
-.pop:hover .poptxt{
-  visibility: visible;
-}
-.auth{
-  text-align: right;
-}
-
-.home{
-  color: white;
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-}
-.home:hover{
-  color: white;
-} */
 img{
 height:60px;
 border-radius: 50%;

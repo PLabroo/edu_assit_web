@@ -60,6 +60,10 @@ router.get("/login.html", function (req, res) {
   res.sendFile(path + "/login" + "/login.html");
 });
 
+router.get("/resell.html", function (req, res) {
+	res.sendFile(path + "/Book" + "/resel.html");
+});
+
 app.use(express.static(path + '/Landing'))
 app.use(express.static(path + '/Engineering'))
 app.use('/engg',express.static(path + '/Mba'))
@@ -69,6 +73,12 @@ app.use(express.static(path + '/Team'))
 app.use('/engg/mtech-ms',express.static(path + '/Resources'))
 app.use(express.static(path + '/signup'))
 app.use(express.static(path + '/login'))
+app.use(express.static(path + '/Book'))
+
+// var arry = ["Saab", "Volvo", "BMW"];
+// app.get('/sample-api', (req, res) => {
+// 	res.json({ text: arry });
+// })
 
 //sql database
 var connection = mysql.createConnection({
@@ -78,6 +88,18 @@ var connection = mysql.createConnection({
 	database : 'nodelogin',
 	
 });
+
+app.post('/sale',function(request,response){
+	var title = request.body.title;
+	var price = request.body.price;
+	var contact = request.body.contact;
+	var desc = request.body.desc;
+	var date = request.body.date;
+	console.log(title,price,contact,desc,date);
+
+	response.json({status: 'Your book is now up for sale. Interested parties will contact you'});
+});
+
 
 app.post('/auth', function(request, response) {
 	var email = request.body.email;

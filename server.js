@@ -5,7 +5,20 @@ var router = express.Router();
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
 var path = __dirname;
+const multer = require('multer');
+const upload = multer({dest: __dirname + '/images'});
 //var book = require(./books.js)
+
+//multer images
+
+app.post('/upload', upload.single('photo'), (req, res) => {
+    if(req.file) {
+        res.json(req.file);
+    }
+    else throw 'error';
+});
+
+//end
 
 app.use(session({
 	secret: 'secret',
@@ -133,7 +146,7 @@ app.post('/sale',function(request,response){
 //login
 app.post('/auth', function(request, response) {
 	var email = request.body.email;
-  console.log(email);
+  //console.log(email);
 	var password = request.body.password;
 	if (email && password) {
 		connection.query('SELECT * FROM accounts WHERE email = ? AND password = ?', [email, password], function(error, results, fields) {
@@ -152,6 +165,10 @@ app.post('/auth', function(request, response) {
 	}
 });
 
+app.post('/logout',function(request,response){
+	request.session.loggedin = false;
+	response.json({logout: 'YES'});
+})
 
 app.get('/home', function(request, response) {
 	if (request.session.loggedin) {
@@ -162,11 +179,7 @@ app.get('/home', function(request, response) {
 	response.end();
 });
 
-//logout
-app.post('/logout',function(request,response){
-	request.session.loggedin = false;
-	response.json({logout: 'YES'});
-})
+
 //sign up
 
 app.post('/register', function(req , res){
@@ -184,7 +197,7 @@ app.post('/register', function(req , res){
 				if(error){
 					console.log(error);
 				}	else {
-					res.redirect("/login.html");
+					res.redirect("/");
 				}
 			});
 		}
@@ -196,7 +209,7 @@ app.post('/register', function(req , res){
 app.get('/user', (req, res) => {
 	res.json({ check: req.session.loggedin, email: req.session.email });
 	// res.json({text: "val", check: 'lue'})
-})
+});
 
 app.use("/",router);
 

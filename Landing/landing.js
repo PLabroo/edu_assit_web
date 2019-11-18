@@ -1,10 +1,16 @@
-// LOGOUT
+$('#logout').click(function(){
+    $.post('/logout',function(logout){
+        alert('User logged out.')
+    })
+})
+
+
 $.get('/user',function(loginfo){
     var name = loginfo.email;
     var log = loginfo.check;
     if(log){
         document.getElementById('logout').classList.remove('d-none');
-        document.getElementById('login').classList.add('d-none');
+        document.getElementById('login-div').classList.add('d-none');
         html =`<ul style="margin:auto 0">
             <li style="list-style-type:none"><a style="color:#fff;text-decoration: none;" href=""
                 id="login"></span>&nbsp;${log.val()}</a></li>
@@ -13,7 +19,7 @@ $.get('/user',function(loginfo){
     }
     else{
         document.getElementById('logout').classList.add('d-none');
-        document.getElementById('login').classList.remove('d-none');
+        document.getElementById('login-div').classList.remove('d-none');
     }
 })
 

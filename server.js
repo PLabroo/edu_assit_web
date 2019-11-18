@@ -162,7 +162,11 @@ app.get('/home', function(request, response) {
 	response.end();
 });
 
-
+//logout
+app.post('/logout',function(request,response){
+	request.session.loggedin = false;
+	response.json({logout: 'YES'});
+})
 //sign up
 
 app.post('/register', function(req , res){
@@ -189,7 +193,10 @@ app.post('/register', function(req , res){
 });
 
 // (`username` , `password` , `email` )
-
+app.get('/user', (req, res) => {
+	res.json({ check: req.session.loggedin, email: req.session.email });
+	// res.json({text: "val", check: 'lue'})
+})
 
 app.use("/",router);
 
